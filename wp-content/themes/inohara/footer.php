@@ -18,7 +18,7 @@
 		<div class="inner">
 			<div class="footer_content">
 				<div class="footer_contact">
-					<a href="./index.html">
+					<a href="<?php echo home_url(); ?>/">
 						<img src="<?php bloginfo('template_url'); ?>/img/common/pic_footer_logo01.png" alt="">
 					</a>
 					<p class="footer_contact_subs">株式会社猪原商会</p>
