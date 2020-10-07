@@ -27,10 +27,8 @@ get_header();
 					
 					while($query->have_posts()) : $query->the_post();
 				?>
-					<span class="top_sec02_date"><?php echo get_the_date('Y-m-d') ?></span>
-
-					<span class="top_title_post"><?php the_title() ?></span>
-					<span class="top_content_post"><?php the_content() ?></span>
+					<span class="top_sec02_date"><?php echo get_the_date('y.m.d') ?></span>
+					<?php echo '<a href="'.get_the_permalink().'" class="top_title_post" >'.get_the_title().'</a>'; ?>
 				<?php endwhile;  wp_reset_query()?>
 			</p>
 		</section>
@@ -47,7 +45,7 @@ get_header();
 				テキストが入ります。テキストが入ります。
 			</p>
 			<div class="button-more-wrapper">
-				<a href="./company.html">more</a>
+				<a href="<?php echo home_url(); ?>/company">more</a>
 			</div>
 		</section>
 
@@ -63,7 +61,7 @@ get_header();
 				テキストが入ります。テキストが入ります。
 			</p>
 			<div class="button-more-wrapper">
-				<a href="./recruit.html">more</a>
+				<a href="<?php echo home_url(); ?>/recruit">more</a>
 			</div>
 		</section>
 
@@ -79,12 +77,12 @@ get_header();
 				テキストが入ります。テキストが入ります。
 			</p>
 			<div class="button-more-wrapper">
-				<a href="./product.html">more</a>
+				<a href="<?php echo home_url(); ?>/product">more</a>
 			</div>
 		</section>
 
 		<div class="inner com_button_contact">
-			<a href="./contact.html">お問い合わせ</a>
+			<a href="<?php echo home_url(); ?>/contact.html">お問い合わせ</a>
 		</div>
 
     </div><!--/main-->

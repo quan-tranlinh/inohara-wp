@@ -214,6 +214,11 @@ body {
     line-height: 2;
     letter-spacing: 3px;
     color: #333333;
+    text-decoration: underline;
+}
+
+.top_title_post:visited {
+    color: #333333;
 }
 
 .top_content_post {
