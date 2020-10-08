@@ -159,6 +159,22 @@ function inohara_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inohara_scripts' );
 
+function override_admin_bar_css() { 
+	if ( is_admin_bar_showing() ) { ?>
+	   <style type="text/css">
+		  #header {
+			  top: 32px
+		  }
+		  @media only screen and (max-width: 782px) {
+			#header {
+			  top: 46px
+		  }
+		  }
+	   </style>
+	<?php }
+}
+add_action( 'override_admin_bar_css', 'override_admin_bar_css' );
+
 /**
  * Implement the Custom Header feature.
  */

@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-    <main id="primary" class="site-main">
+    <div class="main">
 		<div class="inner">
 			<?php
 			while ( have_posts() ) :
@@ -11,6 +11,6 @@ get_header();
 			?>
 			
 		</div>
-    </main><!-- #main -->
+    </div><!-- #main -->
 <?php
 get_footer();
