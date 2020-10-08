@@ -11,7 +11,7 @@ get_header();
         <div class="breadcrumb">
             <div class="inner">
                 <ul>
-                    <li class="breadcrumb_item"><a href="./index.html">トップ</a></li>
+                    <li class="breadcrumb_item"><a href="<?php echo home_url(); ?>/">トップ</a></li>
                     <li class="breadcrumb_item">個人情報保護方針</li>
                 </ul>
             </div>

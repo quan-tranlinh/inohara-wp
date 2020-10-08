@@ -11,7 +11,7 @@ get_header();
         <div class="breadcrumb">
             <div class="inner">
                 <ul>
-                    <li class="breadcrumb_item"><a href="./index.html">トップ</a></li>
+                    <li class="breadcrumb_item"><a href="<?php echo home_url(); ?>/">トップ</a></li>
                     <li class="breadcrumb_item">お問い合わせ</li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@ get_header();
                     <p class="contact_note_txt01">
                         お手数ですが、<span class="red_txt">＊</span> の付いた項目は必ずご入力ください。<br />
                         半角カタカナ、外字（登録文字）での入力は文字化けの原因となりますのでお控えください。<br />
-                        <a href="./privacypolicy.html">個人情報保護方針</a>にご同意の上、送信ください。
+                        <a a href="<?php echo home_url(); ?>/privacypolicy">個人情報保護方針</a>にご同意の上、送信ください。
                     </p>
                 </div>
 

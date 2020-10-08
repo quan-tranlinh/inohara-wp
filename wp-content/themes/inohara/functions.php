@@ -159,22 +159,6 @@ function inohara_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inohara_scripts' );
 
-function override_admin_bar_css() { 
-	if ( is_admin_bar_showing() ) { ?>
-	   <style type="text/css">
-		  #header {
-			  top: 32px
-		  }
-		  @media only screen and (max-width: 782px) {
-			#header {
-			  top: 46px
-		  }
-		  }
-	   </style>
-	<?php }
-}
-add_action( 'override_admin_bar_css', 'override_admin_bar_css' );
-
 /**
  * Implement the Custom Header feature.
  */
@@ -201,3 +185,23 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
+function override_admin_bar_css() { 
+	if ( is_admin_bar_showing() ) { ?>
+	   <style type="text/css">
+		  #header {
+			  top: 32px
+		  }
+		  @media only screen and (max-width: 782px) {
+			#header {
+			  top: 46px
+		  }
+		  }
+	   </style>
+	<?php }
+ }
+ // on backend area
+add_action( 'admin_head', 'override_admin_bar_css' );
+// on frontend area
+add_action( 'wp_head', 'override_admin_bar_css' );
