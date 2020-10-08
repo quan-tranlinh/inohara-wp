@@ -1145,6 +1145,28 @@ body {
     padding-left: 44px;
 }
 
+/****************************************************
+ * SINGLE PAGE
+****************************************************/
+.entry-header {
+    text-align: center;
+}
+
+.entry-title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 3px;
+    color: #333333;
+}
+
+.entry-content {
+    text-align: center;
+}
+
+.entry-footer {
+    text-align: center;
+}
 
 /********************************************************
  * REPONSIVE ON MOBILE WITH MAIN BREAKPOINT 768PX
