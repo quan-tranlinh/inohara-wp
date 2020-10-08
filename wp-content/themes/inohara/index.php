@@ -82,7 +82,7 @@ get_header();
 		</section>
 
 		<div class="inner com_button_contact">
-			<a href="<?php echo home_url(); ?>/contact.html">お問い合わせ</a>
+			<a href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
 		</div>
 
     </div><!--/main-->
