@@ -4,7 +4,7 @@ get_header();
     <div class="main">
 		<div class="page_title01">
 			<h2 class="title01"><?php echo get_the_title() ?></h2>
-			<p class="sub_title01"><?php echo get_the_title() ?></p>
+			<p class="sub_title01">NEWS</p>
 		</div><!--page_title01-->
 
 		<div class="breadcrumb">
