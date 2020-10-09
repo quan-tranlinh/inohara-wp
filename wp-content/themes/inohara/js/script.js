@@ -71,12 +71,12 @@ function validateContactForm() {
             contents: "required",
         },
         messages: {
-            name: "This field is required!",
+            name: "This field is required.",
             mail: {
-                required: 'This field is required!',
+                required: 'This field is required.',
                 email: 'Please enter mail correctly!',
             },
-            mail_contents: "This field is required!"
+            mail_contents: "This field is required."
         }
     });
 }
