@@ -86,7 +86,7 @@ body {
 }
 
 .menu_item_link:hover {
-    color: #0c46c1;
+    color: #0c46c1 !important;
 }
 
 .menu_item_link:visited {
@@ -143,10 +143,12 @@ body {
 
 .footer_menu_item:hover {
     text-decoration: underline;
+    color: #ffffff !important;
 }
 
+
 .footer_menu_item:visited {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .footer_menu_item:first-child,
@@ -1162,11 +1164,13 @@ body {
     line-height: 2;
     letter-spacing: 3px;
     color: #333333;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .entry-content {
-    text-align: center;
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 90px;
 }
 
 .entry-footer {
@@ -1728,5 +1732,19 @@ body {
     .sitemap_item_link {
         font-size: 1.6rem;
         line-height: 1.7;
+    }
+
+    /********************************************************
+    * SINGLE PAGE
+    ********************************************************/
+    .entry-title {
+        margin-top: 35px;
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+    .entry-content {
+        margin-bottom: 40px;
+        font-size: 1.4rem;
     }
 }   
