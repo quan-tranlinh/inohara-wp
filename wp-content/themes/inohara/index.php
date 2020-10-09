@@ -27,7 +27,7 @@ get_header();
 					
 					while($query->have_posts()) : $query->the_post();
 				?>
-					<span class="top_sec02_date"><?php echo get_the_date('y.m.d') ?></span>
+					<span class="top_sec02_date"><?php echo get_the_date('yy.m.d') ?></span>
 					<?php echo '<a href="'.get_the_permalink().'" class="top_title_post" >'.get_the_title().'</a>'; ?>
 				<?php endwhile;  wp_reset_query()?>
 			</p>
