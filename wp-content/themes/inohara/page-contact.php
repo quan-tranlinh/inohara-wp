@@ -58,7 +58,7 @@ get_header();
                 </div>
 
                 <div class="contact_form">
-                    <form action="./mail.php" method="POST" id="contact_form" >
+                    <form action="<?php echo home_url() ?>/mail/" method="POST" id="contact_form" >
                         <table class="contact_table">
                             <tbody>
                                 <tr class="contact_table_row">
