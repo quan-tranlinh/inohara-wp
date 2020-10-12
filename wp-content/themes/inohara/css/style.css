@@ -1752,3 +1752,9 @@ body {
         font-size: 1.4rem;
     }
 }   
+
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed !important;
+    }
+}
